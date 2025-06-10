@@ -28,7 +28,7 @@ cancella.addEventListener('click', function() {
 
 let contatoreVirgola = 0;
 virgola.addEventListener('click', function() {
-    if (schermo.textContent.length < 11) {
+    if (schermo.textContent.length < 11 && !operatori.includes(schermo.textContent.charAt(schermo.textContent.length - 1))) {
         if (contatoreVirgola === 0){
             schermo.textContent += '.';
             contatoreVirgola++;
